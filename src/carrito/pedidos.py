@@ -41,6 +41,7 @@ class Carrito:
         return item
 
     def cambiar_cantidad(self, indice, nueva_cantidad):
+        # Fix DEF-ZHYRO-031: subtotal verificado, se recalcula al cambiar cantidad
         """DEF-ZHYRO-031 (corregido): al cambiar la cantidad, el
         subtotal se recalcula de inmediato (CP-ZHYRO-016)."""
         if nueva_cantidad <= 0:
