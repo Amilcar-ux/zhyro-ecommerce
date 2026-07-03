@@ -1,3 +1,4 @@
+# Módulo revisado en Sprint 4 - proceso Nivel 3 TMMi
 """
 Módulo de Carrito y Pedidos — ZHYRO
 Implementa RF3 (carrito de compras) y RF4 (proceso de pago con
