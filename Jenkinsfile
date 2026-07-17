@@ -15,8 +15,8 @@ pipeline {
         stage('2. Preparar Entorno') {
             steps {
                 bat '''
-                :: Reemplaza la ruta de abajo por la de tu instalación real de Python si es diferente
-                "C:\Users\quisp\Downloads" -m venv venv
+                :: Corrección: Apuntamos al archivo ejecutable real usando doble barra diagonal
+                "C:\\Users\\quisp\\Downloads\\python.exe" -m venv venv
                 call venv\\Scripts\\activate
                 pip install -r requirements.txt
                 '''
