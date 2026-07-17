@@ -15,8 +15,8 @@ pipeline {
         stage('2. Preparar Entorno') {
             steps {
                 bat '''
-                :: Corrección: Apuntamos al archivo ejecutable real usando doble barra diagonal
-                "C:\\Users\\quisp\\Downloads\\python.exe" -m venv venv
+                :: Usamos "py" que es el comando universal de Windows para lanzar Python
+                py -m venv venv
                 call venv\\Scripts\\activate
                 pip install -r requirements.txt
                 '''
