@@ -47,3 +47,4 @@ Resultado esperado: **42 passed — cobertura total ~97%** (meta institucional: 
 - [Política de pruebas](docs/politica_de_pruebas.md)
 - [Plan de pruebas Sprint 2](docs/plan_pruebas_sprint2.md)
 - [Matriz de trazabilidad](docs/matriz_trazabilidad.md)
+- Proyecto verificado bajo el proceso Nivel 3 TMMi.
