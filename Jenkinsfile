@@ -15,7 +15,9 @@ pipeline {
         stage('2. Preparar Entorno') {
             steps {
                 bat '''
-                :: Usamos "py" que es el comando universal de Windows para lanzar Python
+                :: Agregamos la ruta del sistema donde Windows guarda el lanzador 'py'
+                SET PATH=%PATH%;C:\\Windows
+                
                 py -m venv venv
                 call venv\\Scripts\\activate
                 pip install -r requirements.txt
@@ -26,6 +28,9 @@ pipeline {
         stage('3. Ejecutar Selenium') {
             steps {
                 bat '''
+                :: Aseguramos la ruta también en esta etapa
+                SET PATH=%PATH%;C:\\Windows
+                
                 call venv\\Scripts\\activate
                 pytest --alluredir=allure-results
                 '''
